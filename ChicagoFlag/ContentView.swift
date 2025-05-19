@@ -41,15 +41,55 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Rectangle()
-                .foregroundColor(.orange)
-                .frame(width: 50, height: 50)
-            Image("chicagoStar")
-                .foregroundColor(.gray)
+        ZStack {
+                    Rectangle()
+                    VStack {
+                        Rectangle()
+                            .padding(.all, -12.0)
+                            .foregroundColor(.white)
+                            .frame(width: 400.0, height: 45.0)
+                        Rectangle()
+                            .padding(.all, -10.0)
+                            .foregroundColor(Color(hue: 0.6027, saturation: 0.411, brightness: 1.0))
+                            .frame(width: 400.0, height: 55.0)
+                        
+                        ZStack {
+                            Rectangle()
+                                .padding(.vertical, -7.0)
+                                .foregroundColor(.white)
+                                .frame(width: 400, height: 106.0)
+                            HStack {
+                                Image("chicagoStar")
+                                    .resizable()
+                                    .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
+                                    .frame(width: 39, height: 46)
+                                Image("chicagoStar")
+                                    .resizable()
+                                    .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
+                                    .frame(width: 39, height: 46)
+                                Image("chicagoStar")
+                                    .resizable()
+                                    .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
+                                    .frame(width: 39, height: 46)
+                                Image("chicagoStar")
+                                    .resizable()
+                                    .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
+                                    .frame(width: 39, height: 46)
+                            }
+                        }
+                        Rectangle()
+                            .padding(.all, -7.0)
+                            .foregroundColor(Color(hue: 0.6027, saturation: 0.411, brightness: 1.0))
+                            .frame(width: 400.0, height: 55.0)
+                        Rectangle()
+                            .padding(.all, -11.0)
+                            .foregroundColor(.white)
+                            .frame(width: 400.0, height: 45.0)
+                    }
+                    
+                }
+            }
         }
-    }
-}
 
 
 
